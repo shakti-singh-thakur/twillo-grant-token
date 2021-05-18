@@ -4,7 +4,7 @@ var app = express();
 
 
 //READ Request Handlers
-app.get('/grant-token', (req, res) => {
+app.get('/video-consult', (req, res) => {
     const AccessToken = require('twilio').jwt.AccessToken;
     const ChatGrant = AccessToken.ChatGrant;
 
