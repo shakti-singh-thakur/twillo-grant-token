@@ -47,7 +47,7 @@ app.post('/grant_token', [
             res.send(err);
         }
 });
-
-app.listen(3000, () => {
- console.log("Server running on port 3000");
+const port = process.env.PORT || 3000;
+app.listen(process.env.PORT || 3000, function() {
+    console.log(`Server listening on port ${port}`);
 });
